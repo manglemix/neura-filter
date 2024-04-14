@@ -1,0 +1,15 @@
+[package]
+name = "neura-filter"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+ml-boilerplate = { path = "../ml-boilerplate" }
+common-models = { path = "../common-models" }
+rand = { workspace = true }
+serde = { workspace = true }
+rand_distr = "0"
+serde-big-array = "0"
+nalgebra = { version = "0", features = ["serde-serialize"] }
